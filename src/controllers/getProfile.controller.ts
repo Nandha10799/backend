@@ -15,7 +15,7 @@ export const getProfileController = async (req: AuthRequest, res: Response, next
             message: "Profile fetched successfully",
         });
     } catch (error) {
-        console.error("Failed to fetch profile", error);
+        // console.error("Failed to fetch profile", error);
         next(error);
     }
 };
